@@ -1,5 +1,4 @@
 import DateTimePicker from './DateTimePicker';
-import type { DateType } from './types';
 
-export { DateType };
+export * from './types';
 export default DateTimePicker;
