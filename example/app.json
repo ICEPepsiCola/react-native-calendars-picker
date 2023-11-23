@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "React Native UI DatePicker",
+    "slug": "react-native-calendars-picker-example",
+    "description": "Customizable React Native DateTime Picker component for Android, iOS, and Web. It includes date, time, and supports different locales.",
+    "version": "1.0.0",
+    "githubUrl": "https://github.com/ICEPepsiCola/react-native-calendars-pickerh",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/calendar.png",
+      "themeColor": "#FFFFFF",
+      "display": "fullscreen"
+    }
+  }
+}
