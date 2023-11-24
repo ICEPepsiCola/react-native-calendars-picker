@@ -2,17 +2,13 @@ import React, { useCallback } from 'react';
 import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
 import { useCalendarContext } from '../CalendarContext';
 import dayjs from 'dayjs';
-import { CalendarViews } from '../enums';
+import { ARROW_LEFT, ARROW_RIGHT, CalendarViews } from '../enums';
 import type { HeaderProps } from '../types';
 import { getDateYear, getYearRange, YEAR_PAGE_SIZE } from '../utils';
-
-const arrow_left = require('../assets/images/arrow_left.png');
-const arrow_right = require('../assets/images/arrow_right.png');
 
 const Header = ({ buttonPrevIcon, buttonNextIcon }: HeaderProps) => {
   const {
     currentDate,
-
     currentYear,
     onChangeMonth,
     onChangeYear,
@@ -44,7 +40,7 @@ const Header = ({ buttonPrevIcon, buttonNextIcon }: HeaderProps) => {
       >
         {buttonPrevIcon || (
           <Image
-            source={arrow_left}
+            source={{ uri: ARROW_LEFT }}
             style={{
               width: theme?.headerButtonSize || 18,
               height: theme?.headerButtonSize || 18,
@@ -76,7 +72,7 @@ const Header = ({ buttonPrevIcon, buttonNextIcon }: HeaderProps) => {
       >
         {buttonNextIcon || (
           <Image
-            source={arrow_right}
+            source={{ uri: ARROW_RIGHT }}
             style={{
               width: theme?.headerButtonSize || 18,
               height: theme?.headerButtonSize || 18,
